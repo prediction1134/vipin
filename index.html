@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIPIN SINGH</title>
+    
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '3317040071782016'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=3317040071782016&ev=PageView&noscript=1"/>
+    </noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-image: url('https://raw.githubusercontent.com/prediction1134/Rcb/fcb404a82f6221207afecbd4f1888910a5e05f90/rcb.jpg'); 
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4); 
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h3 { font-size: 1.4rem; margin-bottom: 5px; }
+        h1 { font-size: 2.6rem; font-weight: bold; margin-bottom: 35px; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); }
+
+        .join-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #0000FF;
+            color: white;
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 45px;
+            box-shadow: 0 0 0 0 rgba(0, 0, 255, 0.7);
+            animation: pulse-animation 1.5s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 0, 255, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(0, 0, 255, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 0, 255, 0); }
+        }
+
+        .timer-circle {
+            width: 80px;
+            height: 80px;
+            background: #0000FF;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.1rem;
+            font-weight: bold;
+            margin: 0 auto 25px auto;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .footer-text { font-size: 0.9rem; opacity: 0.8; letter-spacing: 1px; }
+
+        /* Setup By Style */
+        .setup-by {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+            z-index: 10;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <h3>India No.1 Tipper</h3>
+        <h1>VIPIN SINGH</h1>
+
+        <a href="https://t.me/+6usTZprdWzdkOTQ1" class="join-btn">
+            Join The Original Vipin Singh <i class="fab fa-telegram-plane"></i>
+        </a>
+
+        <div class="timer-section">
+            <p>FREE JOINING ENDS IN...</p>
+            <div id="countdown" class="timer-circle">23</div>
+        </div>
+
+        <p class="footer-text">Join The Original Vipin Singh</p>
+    </div>
+
+    <div class="setup-by">
+        Set-up By @AdDukan1
+    </div>
+
+    <script>
+        let seconds = 23;
+        const timerElement = document.getElementById('countdown');
+        setInterval(() => {
+            seconds--;
+            if (seconds < 0) seconds = 30;
+            timerElement.innerText = seconds;
+        }, 1000);
+    </script>
+</body>
+</html>
